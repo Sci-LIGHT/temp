@@ -1,0 +1,1461 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Toledo City Science High School</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- ==========================================
+         LOADING SCREEN
+    =========================================== -->
+
+    <div id="loading-screen">
+      <!-- Replace this image with your own logo -->
+      <img
+        src="assets/logo/Scihi-logo.png"
+        alt="Student Wellness Hub Logo"
+        id="loading-logo"
+      />
+
+      <div class="loading-bar-container">
+        <div id="loading-bar"></div>
+      </div>
+
+      <p id="loading-text">Loading... 0%</p>
+    </div>
+
+    <!-- ==========================================
+         WEBSITE
+    =========================================== -->
+
+    <div id="website">
+      <!-- ======================================
+             SHARED NAVIGATION
+        ======================================= -->
+
+      <header class="navbar">
+        <button class="logo-button" data-navigate="home">
+          <img src="assets/logo/Scihi-logo.png" alt="Logo" />
+
+          <span> TCSHS Hub </span>
+        </button>
+
+        <button id="menu-button" class="menu-button" aria-label="Open menu">
+          &#9776;
+        </button>
+
+        <nav id="navigation">
+          <button data-navigate="home">Home</button>
+
+          <button data-navigate="mental-health">About</button>
+
+          <button data-navigate="stress-relief">Activities</button>
+
+          <button data-navigate="study-stress">Milestones</button>
+
+          <button data-navigate="calm-zone">Location</button>
+
+          <button data-navigate="help-support">Contact</button>
+        </nav>
+      </header>
+
+      <!-- ======================================
+             PAGE SYSTEM
+
+             ONLY ONE OF THESE IS VISIBLE AT A TIME
+        ======================================= -->
+
+      <main id="page-container">
+        <!-- ==================================
+                 HOME PAGE
+            =================================== -->
+
+        <div class="website-page active" id="page-home">
+          <section class="home-page">
+            <div class="home-content">
+              <p class="eyebrow">
+                TCSHS: Exaltatus Fueres; Soar High, Sci-High!
+              </p>
+
+              <h1>TCSHS School Hub</h1>
+
+              <p class="home-description">
+                A welcoming, student-centered environment that encourages curiosity, critical thinking, and a passion for science &mdash; where students can learn, explore, discover, and prepare for a brighter future.
+              </p>
+
+              <div class="home-buttons">
+                <button class="primary-button" data-navigate="mental-health">
+                  Explore Toledo City Science High School
+                </button>
+
+                <button class="secondary-button" data-navigate="calm-zone">
+                  Visit the Location
+                </button>
+              </div>
+            </div>
+
+            <div class="home-features">
+              <button class="home-feature" data-navigate="mental-health">
+                <span>
+                  <img src="assets/feature icon/brain.png" alt="" />
+                </span>
+
+                <div>
+                  <h3>ABOUT TCSHS</h3>
+
+                  <p>
+                    Simple, reliable information on Toledo City Science High School.
+                  </p>
+                </div>
+              </button>
+
+
+              <button class="home-feature" data-navigate="stress-relief">
+                <span>
+                  <img src="assets/feature icon/meditate.png" alt="" />
+                </span>
+
+                <div>
+                  <h3>ACTIVITIES</h3>
+
+                  <p>Ongoing events/activities happening on the school.</p>
+                </div>
+              </button>
+
+              <button class="home-feature" data-navigate="study-stress">
+                <span>
+                  <img src="assets/feature icon/clock.png" alt="" />
+                </span>
+
+                <div>
+                  <h3>MILESTONES &amp; ACHIEVEMENTS</h3>
+
+                  <p>Practical tips for managing academic pressure.</p>
+                </div>
+              </button>
+
+              <button class="home-feature" data-navigate="calm-zone">
+                <span>
+                  <img src="assets/feature icon/study.png" alt="" />
+                </span>
+
+                <div>
+                  <h3>TCSHS LOCATION</h3>
+
+                  <p>A quiet space to pause, breathe, and reset.</p>
+                </div>
+              </button>
+
+              <button class="home-feature" data-navigate="help-support">
+                <span>
+                  <img src="assets/feature icon/phone.png" alt="" />
+                </span>
+
+                <div>
+                  <h3>CONTACT &amp; SUPPORT</h3>
+
+                  <p>Know where and how to reach out when you need it.</p>
+                </div>
+              </button>
+            </div>
+          </section>
+        </div>
+
+        <!-- ==================================
+                 MENTAL HEALTH PAGE
+            =================================== -->
+
+        <div class="website-page" id="page-mental-health">
+          <section class="content-page">
+            <div class="page-introduction">
+              <p class="eyebrow">LEARN</p>
+
+              <h1>Mental Health Information Hub</h1>
+
+              <p>
+                Simple and reliable information about stress, anxiety, burnout,
+                emotional well-being, and healthy coping practices. Select a
+                topic to read more.
+              </p>
+            </div>
+
+            <!-- MENTAL HEALTH REFERENCE ENTRIES -->
+
+            <div class="wellness-list">
+              <details class="wellness-entry">
+                <summary>
+                  <span class="wellness-entry-icon">
+                    <img src="assets/feature icon/1.png" />
+                  </span>
+                  <span class="wellness-entry-heading">
+                    <span class="wellness-entry-title">Stress</span>
+                    <span class="wellness-entry-subtitle">
+                      How the body responds to challenging situations.
+                    </span>
+                  </span>
+                  <span class="wellness-entry-arrow">&#8250;</span>
+                </summary>
+
+                <div class="wellness-entry-body">
+                  <div class="wellness-field">
+                    <h3>What it is</h3>
+                    <p>
+                      Stress is the body's natural response to situations that
+                      feel challenging, demanding, or unfamiliar.
+                    </p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>What causes it</h3>
+                    <ul>
+                      <li>Academic or work pressure</li>
+                      <li>Financial difficulties</li>
+                      <li>Relationship problems</li>
+                      <li>Health issues</li>
+                      <li>Life changes or transitions</li>
+                      <li>Lack of sleep or rest</li>
+                    </ul>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Signs to notice</h3>
+                    <ul>
+                      <li>Constant worry or irritability</li>
+                      <li>Headaches or muscle tension</li>
+                      <li>Fatigue and difficulty sleeping</li>
+                      <li>Trouble concentrating</li>
+                      <li>Changes in appetite</li>
+                      <li>Feeling overwhelmed</li>
+                    </ul>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Ways to cope</h3>
+                    <ul>
+                      <li>Practice deep breathing or relaxation exercises.</li>
+                      <li>Organize tasks and take regular breaks.</li>
+                      <li>
+                        Exercise and maintain a consistent sleep schedule.
+                      </li>
+                      <li>Talk to someone you trust.</li>
+                      <li>
+                        Seek professional help if stress becomes difficult to
+                        manage.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
+
+              <details class="wellness-entry">
+                <summary>
+                  <span class="wellness-entry-icon">
+                    <img src="assets/feature icon/2.png" />
+                  </span>
+                  <span class="wellness-entry-heading">
+                    <span class="wellness-entry-title">Anxiety</span>
+                    <span class="wellness-entry-subtitle">
+                      Worry, nervousness, and uneasiness explained.
+                    </span>
+                  </span>
+                  <span class="wellness-entry-arrow">&#8250;</span>
+                </summary>
+
+                <div class="wellness-entry-body">
+                  <div class="wellness-field">
+                    <h3>What it is</h3>
+                    <p>
+                      Anxiety can involve feelings of worry, nervousness, fear,
+                      or uneasiness, especially when facing uncertainty or
+                      perceived threats.
+                    </p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>What causes it</h3>
+                    <ul>
+                      <li>Academic or work pressure</li>
+                      <li>Difficult life experiences</li>
+                      <li>Health or financial concerns</li>
+                      <li>Relationship problems</li>
+                      <li>Major changes or uncertainty</li>
+                      <li>Lack of sleep or excessive caffeine</li>
+                    </ul>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Signs to notice</h3>
+                    <ul>
+                      <li>Constant worry or fear</li>
+                      <li>Restlessness or irritability</li>
+                      <li>Rapid heartbeat or shortness of breath</li>
+                      <li>Muscle tension</li>
+                      <li>Difficulty concentrating or sleeping</li>
+                      <li>Avoiding certain people, places, or activities</li>
+                    </ul>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Ways to cope</h3>
+                    <ul>
+                      <li>Practice slow breathing or grounding exercises.</li>
+                      <li>
+                        Challenge unhelpful thoughts and focus on what you can
+                        control.
+                      </li>
+                      <li>
+                        Maintain regular sleep, exercise, and meal routines.
+                      </li>
+                      <li>
+                        Limit caffeine and take breaks from stressful
+                        activities.
+                      </li>
+                      <li>Talk to someone you trust.</li>
+                      <li>
+                        Seek professional help if anxiety persists or interferes
+                        with daily life.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
+
+              <details class="wellness-entry">
+                <summary>
+                  <span class="wellness-entry-icon">
+                    <img src="assets/feature icon/3.png" />
+                  </span>
+                  <span class="wellness-entry-heading">
+                    <span class="wellness-entry-title">Burnout</span>
+                    <span class="wellness-entry-subtitle">
+                      Recognizing prolonged exhaustion.
+                    </span>
+                  </span>
+                  <span class="wellness-entry-arrow">&#8250;</span>
+                </summary>
+
+                <div class="wellness-entry-body">
+                  <div class="wellness-field">
+                    <h3>What it is</h3>
+                    <p>
+                      Burnout can happen when prolonged demands leave someone
+                      feeling emotionally or mentally exhausted.
+                    </p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>What causes it</h3>
+                    <ul>
+                      <li>Heavy or ongoing schoolwork</li>
+                      <li>Constant pressure or high expectations</li>
+                      <li>Not getting enough rest</li>
+                      <li>Trying to balance too many responsibilities</li>
+                      <li>Lack of time for yourself</li>
+                      <li>Feeling like your efforts aren't making progress</li>
+                    </ul>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Signs to notice</h3>
+                    <ul>
+                      <li>Feeling constantly tired or drained</li>
+                      <li>Difficulty concentrating</li>
+                      <li>Losing motivation to study or complete tasks</li>
+                      <li>Feeling easily irritated or frustrated</li>
+                      <li>Feeling overwhelmed by responsibilities</li>
+                      <li>
+                        Wanting to withdraw from activities you usually do
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Ways to cope</h3>
+                    <ul>
+                      <li>Take regular breaks from schoolwork</li>
+                      <li>Break large tasks into smaller steps</li>
+                      <li>Get enough sleep and rest</li>
+                      <li>Make time for enjoyable activities</li>
+                      <li>Avoid trying to finish everything at once</li>
+                      <li>
+                        Talk with someone you trust when things become difficult
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
+
+              <details class="wellness-entry">
+                <summary>
+                  <span class="wellness-entry-icon">
+                    <img src="assets/feature icon/4.png" />
+                  </span>
+                  <span class="wellness-entry-heading">
+                    <span class="wellness-entry-title"
+                      >Emotional Well-being</span
+                    >
+                    <span class="wellness-entry-subtitle">
+                      Understanding and managing your emotions.
+                    </span>
+                  </span>
+                  <span class="wellness-entry-arrow">&#8250;</span>
+                </summary>
+
+                <div class="wellness-entry-body">
+                  <div class="wellness-field">
+                    <h3>What it is</h3>
+                    <p>
+                      Emotional well-being involves understanding your feelings,
+                      responding to challenges, and finding healthy ways to
+                      cope.
+                    </p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Why it matters</h3>
+                    <p>
+                      Emotions can provide information about how we are
+                      experiencing situations and can help us recognize when
+                      something may need attention.
+                    </p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Ways to manage it</h3>
+                    <ul>
+                      <li>Recognizing your feelings</li>
+                      <li>Giving yourself time to process emotions</li>
+                      <li>Expressing your feelings appropriately</li>
+                      <li>Talking to someone you trust</li>
+                      <li>Making time for activities you enjoy</li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
+
+              <details class="wellness-entry">
+                <summary>
+                  <span class="wellness-entry-icon">
+                    <img src="assets/feature icon/5.png" />
+                  </span>
+                  <span class="wellness-entry-heading">
+                    <span class="wellness-entry-title">Healthy Coping</span>
+                    <span class="wellness-entry-subtitle">
+                      Finding constructive ways to handle challenges.
+                    </span>
+                  </span>
+                  <span class="wellness-entry-arrow">&#8250;</span>
+                </summary>
+
+                <div class="wellness-entry-body">
+                  <div class="wellness-field">
+                    <h3>What it is</h3>
+                    <p>
+                      Healthy coping means using constructive ways to respond to
+                      difficult feelings, situations, or stress.
+                    </p>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Examples</h3>
+                    <ul>
+                      <li>Talking to someone you trust</li>
+                      <li>Taking breaks</li>
+                      <li>Organizing responsibilities</li>
+                      <li>Journaling</li>
+                      <li>Relaxing</li>
+                      <li>Engaging in activities you enjoy</li>
+                    </ul>
+                  </div>
+
+                  <div class="wellness-field">
+                    <h3>Why it matters</h3>
+                    <p>
+                      Healthy coping strategies can help you manage challenges
+                      and give you opportunities to recover when things become
+                      stressful.
+                    </p>
+                  </div>
+                </div>
+              </details>
+            </div>
+          </section>
+        </div>
+
+        
+
+        <!-- ==================================
+                 STRESS RELIEF PAGE
+            =================================== -->
+
+        <!-- ==================================
+         STRESS RELIEF PAGE
+=================================== -->
+
+        <div class="website-page" id="page-stress-relief">
+          <section class="content-page">
+            <div class="page-introduction">
+              <p class="eyebrow">RESET</p>
+
+              <h1>Stress Relief Corner</h1>
+
+              <p>
+                Five quick, low-effort activities you can use on your own,
+                between classes or before bed. Each one takes just a few
+                minutes.
+              </p>
+            </div>
+
+            <!-- ==================================
+         ACTIVITY CARDS
+    =================================== -->
+
+            <div class="activity-grid">
+              <button
+                class="activity-card"
+                data-activity="breathing"
+                type="button"
+              >
+                <div class="activity-card-image">
+                  <img src="assets/bgs/brea.jpg" alt="Breathing exercise" />
+                </div>
+
+                <div class="activity-card-content">
+                  <h2>Breathing Exercise</h2>
+
+                  <p>
+                    Slow down and focus on your breathing to create a short
+                    moment of calm.
+                  </p>
+
+                  <span class="activity-card-link">Explore activity →</span>
+                </div>
+              </button>
+
+              <button
+                class="activity-card"
+                data-activity="grounding"
+                type="button"
+              >
+                <div class="activity-card-image">
+                  <img src="assets/bgs/grou.jpg" alt="Grounding exercise" />
+                </div>
+
+                <div class="activity-card-content">
+                  <h2>Grounding Exercise</h2>
+
+                  <p>
+                    Bring your attention back to the present moment using your
+                    surroundings.
+                  </p>
+
+                  <span class="activity-card-link">Explore activity →</span>
+                </div>
+              </button>
+
+              <button
+                class="activity-card"
+                data-activity="journaling"
+                type="button"
+              >
+                <div class="activity-card-image">
+                  <img src="assets/bgs/jou.jpg" alt="Journaling" />
+                </div>
+
+                <div class="activity-card-content">
+                  <h2>Journaling Prompt</h2>
+
+                  <p>
+                    Put your thoughts into words and give yourself space to
+                    reflect.
+                  </p>
+
+                  <span class="activity-card-link">Explore activity →</span>
+                </div>
+              </button>
+
+              <button
+                class="activity-card"
+                data-activity="relaxation"
+                type="button"
+              >
+                <div class="activity-card-image">
+                  <img src="assets/bgs/rel.jpg" alt="Relaxation" />
+                </div>
+
+                <div class="activity-card-content">
+                  <h2>Relaxation</h2>
+
+                  <p>
+                    Take a brief pause and give your body and mind some time to
+                    settle.
+                  </p>
+
+                  <span class="activity-card-link">Explore activity →</span>
+                </div>
+              </button>
+
+              <button
+                class="activity-card"
+                data-activity="short-break"
+                type="button"
+              >
+                <div class="activity-card-image">
+                  <img src="assets/bgs/sho.jpg" alt="Taking a short break" />
+                </div>
+
+                <div class="activity-card-content">
+                  <h2>Short Break</h2>
+
+                  <p>
+                    Step away from your current task and give yourself a few
+                    minutes to reset.
+                  </p>
+
+                  <span class="activity-card-link">Explore activity →</span>
+                </div>
+              </button>
+
+              <button
+                class="activity-card"
+                data-activity="reframing"
+                type="button"
+              >
+                <div class="activity-card-image">
+                  <img
+                    src="assets/bgs/pos.jpg"
+                    alt="Reframing thought patterns"
+                  />
+                </div>
+
+                <div class="activity-card-content">
+                  <h2>Reframing Thought Patterns</h2>
+
+                  <p>
+                    Examine stressful thoughts and consider a more balanced
+                    perspective.
+                  </p>
+
+                  <span class="activity-card-link">Explore activity →</span>
+                </div>
+              </button>
+
+              <button
+                class="activity-card"
+                data-activity="creative"
+                type="button"
+              >
+                <div class="activity-card-image">
+                  <img src="assets/bgs/crea.jpg" alt="Creative expression" />
+                </div>
+
+                <div class="activity-card-content">
+                  <h2>Creative Expression</h2>
+
+                  <p>
+                    Use drawing, writing, music, or another creative activity as
+                    a way to express yourself.
+                  </p>
+
+                  <span class="activity-card-link">Explore activity →</span>
+                </div>
+              </button>
+
+              <button
+                class="activity-card"
+                data-activity="pomodoro"
+                type="button"
+              >
+                <div class="activity-card-image">
+                  <img src="assets/bgs/pomo.jpg" alt="Pomodoro technique" />
+                </div>
+
+                <div class="activity-card-content">
+                  <h2>Pomodoro Technique</h2>
+
+                  <p>
+                    Break study time into focused periods with intentional short
+                    breaks.
+                  </p>
+
+                  <span class="activity-card-link">Explore activity →</span>
+                </div>
+              </button>
+            </div>
+          </section>
+        </div>
+
+        <!-- ==================================
+     STRESS RELIEF ACTIVITY MODAL
+=================================== -->
+
+        <div
+          class="activity-modal hidden"
+          id="activity-modal"
+          aria-hidden="true"
+        >
+          <div class="activity-modal-card">
+            <button
+              type="button"
+              class="activity-modal-close"
+              id="activity-modal-close"
+              aria-label="Close activity"
+            >
+              &times;
+            </button>
+
+            <div class="activity-modal-image">
+              <img id="activity-modal-image" src="" alt="" />
+            </div>
+
+            <div class="activity-modal-content">
+              <p class="eyebrow">RESET</p>
+
+              <h2 id="activity-modal-title"></h2>
+
+              <p
+                class="activity-modal-description"
+                id="activity-modal-description"
+              ></p>
+
+              <div class="activity-modal-meta">
+                <div>
+                  <span>TIME</span>
+                  <strong id="activity-modal-time"></strong>
+                </div>
+
+                <div>
+                  <span>EFFORT</span>
+                  <strong id="activity-modal-effort"></strong>
+                </div>
+              </div>
+
+              <div
+                class="activity-modal-details"
+                id="activity-modal-details"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================================
+                 STUDY & STRESS PAGE
+            =================================== -->
+
+        <div class="website-page" id="page-study-stress">
+          <section class="content-page">
+            <div class="page-introduction">
+              <p class="eyebrow">MANAGE</p>
+
+              <h1>Study and Stress Management</h1>
+
+              <p>
+                Practical tips for managing academic workload, organizing tasks,
+                taking effective breaks, and coping with school-related
+                pressure.
+              </p>
+            </div>
+
+            <div class="activity-grid study-stress-grid">
+              <button
+                class="activity-card study-stress-card"
+                data-study-topic="organize"
+                type="button"
+              >
+                <div class="activity-card-image">
+                  <img
+                    src="assets/bgs/orga.jpg"
+                    alt="Organizing school tasks"
+                  />
+                </div>
+
+                <div class="activity-card-content">
+                  <h2>Organize Tasks</h2>
+
+                  <p>
+                    Break larger assignments into smaller and more manageable
+                    steps.
+                  </p>
+
+                  <span class="activity-card-link"> Explore topic → </span>
+                </div>
+              </button>
+
+              <button
+                class="activity-card study-stress-card"
+                data-study-topic="prioritize"
+                type="button"
+              >
+                <div class="activity-card-image">
+                  <img
+                    src="assets/bgs/prio.jpg"
+                    alt="Prioritizing school responsibilities"
+                  />
+                </div>
+
+                <div class="activity-card-content">
+                  <h2>Prioritize</h2>
+
+                  <p>Decide which responsibilities need attention first.</p>
+
+                  <span class="activity-card-link"> Explore topic → </span>
+                </div>
+              </button>
+
+              <button
+                class="activity-card study-stress-card"
+                data-study-topic="breaks"
+                type="button"
+              >
+                <div class="activity-card-image">
+                  <img src="assets/bgs/break.jpg" alt="Taking a study break" />
+                </div>
+
+                <div class="activity-card-content">
+                  <h2>Take Breaks</h2>
+
+                  <p>
+                    Give yourself opportunities to step away from schoolwork.
+                  </p>
+
+                  <span class="activity-card-link"> Explore topic → </span>
+                </div>
+              </button>
+
+              <button
+                class="activity-card study-stress-card"
+                data-study-topic="planning"
+                type="button"
+              >
+                <div class="activity-card-image">
+                  <img src="assets/bgs/pla.jpg" alt="Planning school tasks" />
+                </div>
+
+                <div class="activity-card-content">
+                  <h2>Plan Ahead</h2>
+
+                  <p>Keep track of upcoming tasks and deadlines.</p>
+
+                  <span class="activity-card-link"> Explore topic → </span>
+                </div>
+              </button>
+
+              <button
+                class="activity-card study-stress-card"
+                data-study-topic="pressure"
+                type="button"
+              >
+                <div class="activity-card-image">
+                  <img
+                    src="assets/bgs/aca.jpg"
+                    alt="Managing academic pressure"
+                  />
+                </div>
+
+                <div class="activity-card-content">
+                  <h2>Academic Pressure</h2>
+
+                  <p>
+                    Recognize when school pressure is becoming difficult to
+                    manage.
+                  </p>
+
+                  <span class="activity-card-link"> Explore topic → </span>
+                </div>
+              </button>
+
+              <button
+                class="activity-card study-stress-card"
+                data-study-topic="recall"
+                type="button"
+              >
+                <div class="activity-card-image">
+                  <img
+                    src="assets/bgs/act.jpg"
+                    alt="Active recalling techniques"
+                  />
+                </div>
+
+                <div class="activity-card-content">
+                  <h2>Active Recalling</h2>
+
+                  <p>
+                    Reading notes over and over makes text feel familiar, but
+                    familiarity is not the same as true memory.
+                  </p>
+
+                  <span class="activity-card-link"> Explore topic → </span>
+                </div>
+              </button>
+
+              <button
+                class="activity-card study-stress-card"
+                data-study-topic="environment"
+                type="button"
+              >
+                <div class="activity-card-image">
+                  <img
+                    src="assets/bgs/envi.jpg"
+                    alt="Environment control for studying"
+                  />
+                </div>
+
+                <div class="activity-card-content">
+                  <h2>Environment Control</h2>
+
+                  <p>
+                    Clean, organized, and distraction-free spaces can help you
+                    focus and feel more in control.
+                  </p>
+                  
+
+                  <span class="activity-card-link"> Explore topic → </span>
+                </div>
+              </button>
+            </div>
+          </section>
+        </div>
+
+        <!-- ==================================
+     STUDY & STRESS TOPIC MODAL
+=================================== -->
+
+        <div
+          class="activity-modal hidden"
+          id="study-stress-modal"
+          aria-hidden="true"
+        >
+          <div class="activity-modal-card">
+            <button
+              type="button"
+              class="activity-modal-close"
+              id="study-stress-modal-close"
+              aria-label="Close topic"
+            >
+              &times;
+            </button>
+
+            <div class="activity-modal-image">
+              <img id="study-stress-modal-image" src="" alt="" />
+            </div>
+
+            <div class="activity-modal-content">
+              <p class="eyebrow">MANAGE</p>
+
+              <h2 id="study-stress-modal-title"></h2>
+
+              <p
+                class="activity-modal-description"
+                id="study-stress-modal-description"
+              ></p>
+
+              <div class="activity-modal-meta">
+                <div>
+                  <span>TIME</span>
+                  <strong id="study-stress-modal-time"></strong>
+                </div>
+
+                <div>
+                  <span>FOCUS</span>
+                  <strong id="study-stress-modal-focus"></strong>
+                </div>
+              </div>
+
+              <div
+                class="activity-modal-details"
+                id="study-stress-modal-details"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================================
+                 CALM ZONE PAGE
+            =================================== -->
+
+        <div class="website-page" id="page-calm-zone">
+          <section class="calm-page">
+            <div class="calm-introduction">
+              <p class="eyebrow">FOCUS</p>
+
+              <h1>Pomodoro Focus Room.</h1>
+
+              <p>
+                Work in short, timed bursts with breaks built in. Add a video or
+                playlist alongside it, if that helps you focus.
+              </p>
+            </div>
+
+            <div class="pomodoro-layout">
+              <!-- ==========================================
+                   TIMER CARD
+              ========================================== -->
+
+              <div class="pomodoro-card">
+                <div class="pomodoro-modes" id="pomodoro-modes">
+                  <button
+                    type="button"
+                    class="pomodoro-mode active"
+                    data-mode="focus"
+                  >
+                    Focus
+                  </button>
+
+                  <button
+                    type="button"
+                    class="pomodoro-mode"
+                    data-mode="short-break"
+                  >
+                    Short Break
+                  </button>
+
+                  <button
+                    type="button"
+                    class="pomodoro-mode"
+                    data-mode="long-break"
+                  >
+                    Long Break
+                  </button>
+                </div>
+
+                <div class="pomodoro-display">
+                  <svg class="pomodoro-ring" viewBox="0 0 200 200">
+                    <circle
+                      class="pomodoro-ring-track"
+                      cx="100"
+                      cy="100"
+                      r="90"
+                    />
+
+                    <circle
+                      class="pomodoro-ring-progress"
+                      id="pomodoro-ring-progress"
+                      cx="100"
+                      cy="100"
+                      r="90"
+                    />
+                  </svg>
+
+                  <div class="pomodoro-time-wrap">
+                    <span id="pomodoro-time">25:00</span>
+
+                    <span id="pomodoro-session-label">Focus session</span>
+                  </div>
+                </div>
+
+                <div class="pomodoro-controls">
+                  <button id="pomodoro-start" class="primary-button">
+                    Start
+                  </button>
+
+                  <button id="pomodoro-reset" class="outline-button">
+                    Reset
+                  </button>
+                </div>
+
+                <div class="pomodoro-meta">
+                  <div class="pomodoro-rounds">
+                    <span>Rounds completed</span>
+                    <strong id="pomodoro-round-count">0</strong>
+                  </div>
+
+                  <div class="pomodoro-settings">
+                    <label>
+                      Focus (min)
+                      <input
+                        type="number"
+                        id="setting-focus"
+                        min="1"
+                        max="90"
+                        value="25"
+                      />
+                    </label>
+
+                    <label>
+                      Short break (min)
+                      <input
+                        type="number"
+                        id="setting-short"
+                        min="1"
+                        max="30"
+                        value="5"
+                      />
+                    </label>
+
+                    <label>
+                      Long break (min)
+                      <input
+                        type="number"
+                        id="setting-long"
+                        min="1"
+                        max="60"
+                        value="15"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <div class="calm-zone-message">
+                  <p class="calm-zone-message-label">A LITTLE REMINDER</p>
+
+                  <h2>
+                    You don't have to have everything figured out right now.
+                  </h2>
+
+                  <p>
+                    Take a breath, give yourself a moment, and remember that
+                    it's okay to slow down. Small steps still count.
+                  </p>
+                </div>
+              </div>
+
+              <!-- ==========================================
+                   MUSIC / VIDEO CARD
+              ========================================== -->
+
+              <div class="pomodoro-media-card">
+                <p class="eyebrow">STUDY WITH</p>
+
+                <h2>Add music or a video</h2>
+
+                <p class="pomodoro-media-hint">
+                  Paste a YouTube video/playlist link or a Spotify
+                  track/playlist link, then load it below.
+                </p>
+
+                <form id="media-form" class="media-form">
+                  <input
+                    type="text"
+                    id="media-link-input"
+                    placeholder="Paste a YouTube or Spotify link..."
+                    autocomplete="off"
+                  />
+
+                  <button type="submit" class="primary-button">Load</button>
+                </form>
+
+                <p class="media-error hidden" id="media-error">
+                  That doesn't look like a YouTube or Spotify link yet. Try
+                  pasting the full URL.
+                </p>
+
+                <div class="media-empty" id="media-empty">
+                  <span>&#127925;</span>
+
+                  <p>Nothing loaded yet. Your player will appear here.</p>
+                </div>
+
+                <div class="media-embed-wrap hidden" id="media-embed-wrap">
+                  <div class="media-embed" id="media-embed"></div>
+
+                  <button
+                    type="button"
+                    class="outline-button media-clear"
+                    id="media-clear"
+                  >
+                    Remove
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ==================================
+                 HELP & SUPPORT PAGE
+            =================================== -->
+
+        <div class="website-page" id="page-help-support">
+          <section class="content-page">
+            <div class="page-introduction">
+              <p class="eyebrow">SUPPORT</p>
+
+              <h1>Help and Support</h1>
+
+              <p>
+                Where students can turn, and how to recognize when it may be
+                time to reach out for additional support.
+              </p>
+            </div>
+
+            <div class="information-grid">
+              <article class="information-card">
+                <span>
+                  <img src="assets/logo/deped.png" />
+                </span>
+                <hr />
+                <h2>
+                <a href="https://www.deped.gov.ph/contact-us/directory/?_gl=1*wm6pr3*_ga*MTE4NTU0MjY0MS4xNzg3NjIzOTcw*_ga_W56M66QXKT*czE3ODc2MjM5NjkkbzEkZzEkdDE3ODc2MjQwMTUkajE0JGwwJGgw" target="_blank">DepEd Learners TeleSafe Contact Center</a>
+                  </h2>
+                <p>
+                  Connects distressed students and parents directly to National
+                  Center for Mental Health specialists and DepEd protection
+                  officers for immediate crisis response and counseling.
+                </p>
+
+                <br />
+                <h4>
+                  <ul>
+                    <li>#33733 — #DEPED</li>
+                    <li>0945-175-9777</li>
+                    <li>weprotectlearners@deped.gov.ph</li>
+                  </ul>
+                </h4>
+              </article>
+
+              <article class="information-card">
+                <span>
+                  <img src="assets/logo/Scihi-logo.png" />
+                </span>
+                <hr />
+                <h2>
+                  <a href="https://www.facebook.com/tcshs1996">School Support</a>
+
+                  </h2>
+
+                <p>
+                  Your school has services set up specifically for this kind of
+                  support.
+                </p>
+
+                <ul>
+                  <li>Guidance or counseling office</li>
+                  <li>Student support services</li>
+                  <li>Wellness or advisory programs</li>
+                  <li>Contacting any of the members behind this project.</li>
+                  <li>Scroll to the bottom for the contact information.</li>
+                </ul>
+              </article>
+
+              <article class="information-card">
+                <span>
+                  <img src="assets/logo/ncmh.png" />
+                </span>
+                <hr />
+                <h2>
+                  <a href="https://ncmh.gov.ph/contact-us/">National Center for Mental Health (NCMH)</a>
+
+                  </h2>
+
+                <p>
+                  The National Center for Mental Health is dedicated to
+                  delivering preventive, curative and rehabilitative mental
+                  health care services.
+                </p>
+                <br />
+                <h4>
+                  <ul>
+                    <li>1553 or 1800-1888-1553 — toll-free</li>
+                    crisis hotline
+                    <li>Globe / TM: 0917-899-8727 (USAP) or 0966-351-4518</li>
+                    <li>Smart / TNT: 0919-057-1553</li>
+                  </ul>
+                </h4>
+              </article>
+            </div>
+
+            <div class="support-notice">
+              <p class="eyebrow">When to reach out</p>
+
+              <h2>You don't have to wait until things feel overwhelming.</h2>
+
+              <p>
+                Consider talking to someone when stress, worry, sadness, or
+                other difficulties become hard to manage or begin to interfere
+                with everyday life &mdash; school, sleep, relationships, or
+                things you usually enjoy.
+              </p>
+
+              <p>
+                Reaching out early is not a last resort. It's a reasonable first
+                step, and asking for help is a sign of self-awareness, not
+                weakness.
+              </p>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <!-- ======================================
+             FOOTER
+        ======================================= -->
+
+      <footer>
+        <strong>
+          LIGHT: Leading Individuals in Growing and Honing their Traits
+        </strong>
+
+        <p class="members">
+          <span class="member">
+            Christ
+            <span class="member-info">
+              <strong>Bacalso, Christ Khayzee R.</strong>
+              <br />
+              Contact #: 0991 583 0437
+              <br />
+              Facebook: Christ Khayzee R. Bacalso
+              <br />
+              Gmail: bacalsokhayzee1226@gmail.com
+            </span>
+          </span>
+
+          <span class="member">
+            Ludivich
+            <span class="member-info">
+              <strong>Canoy, Ludivich Mackenzie M.</strong>
+              <br />
+              Contact #: 0965 255 4410
+              <br />
+              Facebook: Ludivich Mackenzie
+              <br />
+              Gmail: ludivichmackenzie@gmail.com
+            </span>
+          </span>
+
+          <span class="member">
+            K'thana
+            <span class="member-info">
+              <strong>Castro, K'thana Rhogue M.</strong>
+              <br />
+              Contact #: 0945 665 1217
+              <br />
+              Facebook: K'thana Rhogue
+              <br />
+              Gmail: kthanacastro176@gmail.com
+            </span>
+          </span>
+
+          <span class="member">
+            Charlove
+            <span class="member-info">
+              <strong>Dolino, Charlove P.</strong>
+              <br />
+              Contact #: 0910 494 4008
+              <br />
+              Facebook: Charlove Dolino
+              <br />
+              Gmail: dolinocharlove@gmail.com
+            </span>
+          </span>
+
+          <span class="member">
+            Ariane
+            <span class="member-info">
+              <strong>Libre, Ariane M.</strong>
+              <br />
+              Contact #: 0955 115 5137
+              <br />
+              Facebook: Ariane Libre
+              <br />
+              Gmail: arianelibre022018@gmail.com
+            </span>
+          </span>
+
+          <span class="member">
+            Audrey
+            <span class="member-info">
+              <strong>Mahinay, Audrey Pearl</strong>
+              <br />
+              Contact #: 0906 536 4919
+              <br />
+              Facebook: Audrey Pearl Mahinay
+              <br />
+              Gmail: audreymahinay12@gmail.com
+            </span>
+          </span>
+
+          <span class="member">
+            Rabbi
+            <span class="member-info">
+              <strong>Malabon, Rabbi F.</strong>
+              <br />
+              Contact #: 0968 385 6046
+              <br />
+              Facebook: Rab Malabon
+              <br />
+              Gmail: rabbimalabon01@gmail.com
+            </span>
+          </span>
+
+          <span class="member">
+            Ahleah
+            <span class="member-info">
+              <strong>Repdos, Ahleah Cassandra N.</strong>
+              <br />
+              Contact #: 0935 145 5532
+              <br />
+              Facebook: Ahleah Cassandra Repdos
+              <br />
+              Gmail: casseyrepdos26@gmail.com
+            </span>
+          </span>
+
+          <span class="member">
+            Seanele
+            <span class="member-info">
+              <strong>Tampepe, Seanele T.</strong>
+              <br />
+              Contact #: 0916 702 0753
+              <br />
+              Facebook: Seanele Tampepe
+              <br />
+              Gmail: seanele.roque@gmail.com
+            </span>
+          </span>
+
+          <span class="member">
+            Kylie
+            <span class="member-info">
+              <strong>Tolin, Kylie Jade S.</strong>
+              <br />
+              Contact #: 0929 133 1634
+              <br />
+              Facebook: Kylie Jade
+              <br />
+              Gmail: jadetolin07@gmail.com
+            </span>
+          </span>
+
+          <span class="member">
+            Rafael
+            <span class="member-info">
+              <strong>Villaver, Dianella Rafael C.</strong>
+              <br />
+              Contact #: 0992 348 6730
+              <br />
+              Facebook: Rafael Villaver
+              <br />
+              Gmail: dianellavillaver1709@gmail.com
+            </span>
+          </span>
+
+          <!-- Continue for the other members -->
+        </p>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+
+    <script>
+      document.addEventListener("click", function (event) {
+        const ripple = document.createElement("span");
+
+        ripple.className = "click-ripple";
+
+        ripple.style.left = event.clientX + "px";
+        ripple.style.top = event.clientY + "px";
+
+        document.body.appendChild(ripple);
+
+        setTimeout(() => {
+          ripple.remove();
+        }, 700);
+      });
+    </script>
+  </body>
+</html>

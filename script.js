@@ -1,13 +1,4 @@
 /* ==========================================
-   SUPABASE
-========================================== */
-
-const SUPABASE_URL = "https://qhdzejpfruuytmvbyqkf.supabase.co";
-const SUPABASE_KEY = "sb_publishable_QXSTNqbIf85PrPR1V6r5pA_fczvFUrq";
-
-const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
-
-/* ==========================================
    LOADING SCREEN
 ========================================== */
 
@@ -172,26 +163,6 @@ menuButton.addEventListener("click", () => {
 
 
 /* ==========================================
-   CLICK OUTSIDE NOTE
-========================================== */
-
-noteViewer?.addEventListener("click", (event) => {
-  if (event.target === noteViewer) {
-    closeNote();
-  }
-});
-
-/* ==========================================
-   ESCAPE KEY
-========================================== */
-
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && noteViewer.classList.contains("active")) {
-    closeNote();
-  }
-});
-
-/* ==========================================
    BASIC HTML ESCAPING
 ========================================== */
 
@@ -308,7 +279,7 @@ function renderPomodoro() {
 
   document.title = pomodoroRunning
     ? `${formatPomodoroTime(pomodoroSecondsLeft)} · ${pomodoroModeLabels[pomodoroMode]}`
-    : "Student Wellness Hub";
+    : "Toledo City Science High School";
 }
 
 /* ==========================================

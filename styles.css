@@ -429,7 +429,7 @@ textarea:focus-visible {
       rgba(4, 99, 99, 0.389) 55%,
       rgba(9, 44, 57, 0.662) 100%
     ),
-    url("assets/bgs/website-bg.jpg");
+    url("bgs/bg1.jpg");
 
   background-size: cover;
   background-position: center top;
@@ -1667,7 +1667,7 @@ footer p {
 
   background:
     linear-gradient(rgba(245, 248, 250, 0.84), rgba(245, 248, 250, 0.84)),
-    url("assets/bgs/mih-bg.jpg") center center / cover no-repeat;
+    url("bgs/mih-bg.jpg") center center / cover no-repeat;
 
   z-index: 0;
   pointer-events: none;

@@ -429,7 +429,7 @@ textarea:focus-visible {
       rgba(4, 99, 99, 0.389) 55%,
       rgba(9, 44, 57, 0.662) 100%
     ),
-    url("bgs/bg1.jpg");
+    url("asset/bg1.jpg");
 
   background-size: cover;
   background-position: center top;
@@ -640,7 +640,7 @@ textarea:focus-visible {
   position: relative;
   background:
     linear-gradient(rgba(245, 248, 250, 0.96), rgba(245, 248, 250, 0.96)),
-    url("assets/bgs/sm-bg.jpg") center / cover no-repeat;
+    url("asset/bg1.jpg") center / cover no-repeat;
 }
 
 .content-page {
@@ -1065,7 +1065,7 @@ textarea:focus-visible {
   position: relative;
   background:
     linear-gradient(rgba(245, 248, 250, 0.92), rgba(245, 248, 250, 0.92)),
-    url("assets/bgs/sr-bg.jpg") center / cover no-repeat;
+    url("asset/bg1.jpg") center / cover no-repeat;
 }
 
 .activity-grid {
@@ -1164,7 +1164,7 @@ textarea:focus-visible {
   position: relative;
   background:
     linear-gradient(rgba(245, 248, 250, 0.95), rgba(245, 248, 250, 0.95)),
-    url("assets/bgs/med-bg.jpg") center / cover no-repeat;
+    url("asset/bg1.jpg") center / cover no-repeat;
 }
 
 .calm-page {
@@ -1667,7 +1667,7 @@ footer p {
 
   background:
     linear-gradient(rgba(245, 248, 250, 0.84), rgba(245, 248, 250, 0.84)),
-    url("bgs/mih-bg.jpg") center center / cover no-repeat;
+    url("asset/bg1.jpg") center center / cover no-repeat;
 
   z-index: 0;
   pointer-events: none;

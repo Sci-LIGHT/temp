@@ -182,7 +182,7 @@ const activityData = {
   "pascilubong": {
     title: "Pascilubong",
 
-    image: "assets/bgs/pascilubong.jpg",
+    image: "asset/ms1.jpg",
 
     description:
       "A school tradition held annually to warmly welcome new Grade 7 and Grade 11 students.",
@@ -205,7 +205,7 @@ const activityData = {
   "intramurals": {
     title: "Intramurals",
 
-    image: "assets/bgs/intramurals.jpg",
+    image: "asset/ms2.jpg",
 
     description:
       "An annual sports event that promotes sportsmanship, teamwork, discipline, and camaraderie.",
@@ -228,7 +228,7 @@ const activityData = {
   "olympiad": {
     title: "Olympiad Trails",
 
-    image: "assets/bgs/olympiad.jpg",
+    image: "asset/ms3.jpg",
 
     description:
       "A series of stationary academic and skill-based challenges that encourage teamwork and critical thinking.",
@@ -251,7 +251,7 @@ const activityData = {
   "teachers-month": {
     title: "Teachers’ Month",
 
-    image: "assets/bgs/teachers-month.jpg",
+    image: "asset/ms4.jpg",
 
     description:
       "Celebrated every October to recognize and appreciate teachers.",
@@ -293,7 +293,7 @@ const activityData = {
   "buwan-ng-wika": {
     title: "Buwan ng Wika",
 
-    image: "assets/bgs/buwan-ng-wika.jpg",
+    image: "asset/ms5.jpg",
 
     description:
       "A month-long celebration of the Filipino language, culture, and national identity.",
@@ -314,7 +314,7 @@ const activityData = {
   "arts-month": {
     title: "Arts Month",
 
-    image: "assets/bgs/arts-month.jpg",
+    image: "asset/ms7.jpg",
 
     description:
       "A celebration of students’ creativity and artistic talents.",
@@ -335,7 +335,7 @@ const activityData = {
   "nutrition-month": {
     title: "Nutrition Month",
 
-    image: "assets/bgs/nutrition-month.jpg",
+    image: "asset/ms6.jpg",
 
     description:
       "A health-focused celebration about proper nutrition and healthy living.",
